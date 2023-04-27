@@ -1,0 +1,72 @@
+produtos = celulares
+
+-----------------------------------------
+PRODUCTS
+
+
+
+
+BRANDS
+
+
+
+banco de dados
+
+
+M PRODUCTS TO 1 BRANDS
+
+
+1 BRAND TO M PRODUCTS
+
+
+
+-----------------------------------------------
+tabela 
+-----------------------------------------------
+
+PRODUCTS
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    name TEXT NOT NULL,
+    price REAL NOT NULL,
+    description TEXT NOT NULL,
+    brand_id TEXT FOREIGNT KEY -> BRAND.id
+
+
+BRANDS
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    name TEXT NOT
+
+-----------------------------------------------
+camadas
+-----------------------------------------------
+
+index.ts --->>> routers --->>> controller --->>> business --->>> 
+
+database --->>> sql
+
+-----------------------------------------------
+regras de negocio
+-----------------------------------------------
+
+- getAllBrands
+
+resposta:
+
+{
+    id: ,
+    name
+}
+
+- getAllProducts
+
+product model = 
+{
+    id: ,
+    name: ,
+    price: ,
+    description: ,
+    brand: {
+        brand_id: ,
+        name: 
+    }
+}
