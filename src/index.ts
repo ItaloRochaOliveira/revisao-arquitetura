@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import { productRouter } from "./routers/productRouter";
+import { brandsRouter } from "./routers/brandsRouter";
 
 const app = express();
 
@@ -25,3 +26,4 @@ app.get("/ping", (req: Request, res: Response) => {
 });
 
 app.use("/products", productRouter);
+app.use("/brands", brandsRouter);
